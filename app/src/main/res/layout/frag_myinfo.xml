@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="437dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="50dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp" />
+
+    <SearchView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="130dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="Button"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="280dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
